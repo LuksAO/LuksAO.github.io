@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Noto Serif', serif;
+}
+
+body {
+  margin: 0;
+  background-color: #e8e8e8;
+  color: #1c1c1c;
+}
+
+a {
+  color: #9b1700;
+  text-decoration: none;
+}
+
+form, .btn, nav.main, #body-footer,
+ #movie-sections-nav a, .movie-section-title, .movie-card-title {
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  margin: 10px;
+}
+
+ul.no-styles, nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.no-styles a, a.no-styles, nav.main a {
+  color: unset;
+  text-decoration: none;
+}
+
+ul.inline > li {
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.row.center {
+  justify-content: center;
+}
+
+.row.vcenter {
+  align-items: center;
+}
+
+#header-container > * {
+  margin: 10px;
+}
+
+#section1, #section2, #section3 > h2, .text-centered {
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: #9b1700;
+  padding: 0.5em;
+  border-radius: 5px;
+  border-width: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all .5s;
+}
+
+.btn:hover {
+  background-color: #1c1c1c;
+}
+
+#logo {
+  font-size: 2rem;
+}
+
+#oscars {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#club {
+  color: #9b1700;
+  font-style: italic;
+}
+
+nav.main {
+  font-weight: bold;
+}
+
+nav.main a{
+  color: #1c1c1c;
+}
+
+nav.main a.active {
+  font-style: italic;
+}
+
+nav.main a:hover {
+  opacity: 0.5;
+}
+
+nav.main ul > li {
+  display: inline-block;
+}  
+
+nav.main ul > li + li{
+  margin-left: 2.5em;
+}
+
+section {
+  margin: 10vh auto;
+}
+
+#section1 {
+  max-width: 500px;
+}
+
+.howto-card img {
+  max-width: 150px;
+  margin: 20px;
+}
+
+#section3 {
+  max-width: 1000px;
+}
+
+#section3 .row > * {
+  max-width: 400px;
+}
+
+#section3-subtitle {
+  font-size: 1.5rem;
+}
+
+#sesiones-section1 {
+  max-width: 1000px;
+}
+
+#sesiones-intro {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.movie-card-container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 200px));
+  column-gap: 2.5vw;
+  row-gap: 2.5vh;
+  justify-content: center;
+}
+
+#movie-sections-nav a {
+  color: black;
+}
+
+#movie-sections-nav {
+  position: sticky;
+  top: 0;
+}
+
+#movie-sections-nav a:hover {
+  opacity: 0.5;
+}
+
+.movie-card {
+  max-width: 200px;
+  background-color: white;
+  box-shadow: 0 5px 8px lightgray;
+}
+
+.movie-card:hover {
+  outline: #9b1700 solid 2px;
+}
+
+.movie-card img {
+  width: 100%;
+}
+
+.movie-card-title {
+  color: #9b1700;
+  font-weight: bold;
+  margin: 5px;
+  margin-top: auto;
+}
+
+.movie-card > * > * {
+  height: 100%;
+}
+
+.separator {
+  border-bottom: #9b1700 dotted;
+}
+
+form .full-width-input input {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  margin: 15px 0;
+}
+
+address {
+  font-style: normal;
+}
+
+#body-footer {
+  background-color: #433A44;
+  color: white;
+  padding: 10px;
+  padding-top: 10vh;
+}
+
+#body-footer a {
+  color: white;
+}
+
+#body-footer a:hover {
+  color: #9b1700;
+}
+
+.my-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#up-arrow {
+  display: block;
+  text-align: right;
+}
+
+#up-arrow span {
+  cursor: pointer;
+}
+
+#secondary-nav, #social-nav {
+  margin-bottom: 30px;
+}
+
+#social-nav li {
+  margin-left: 10px;
+}
+
+#up-arrow {
+  background-color: #433A44;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  transition: transform 0.5s;
+}
+
+#up-arrow a {
+  padding: 5px;
+}
+
+#up-arrow.show {
+  transform: translate(0, 0);
+}
+
+#up-arrow.hide {
+  transform: translate(0, 100%);
+}
+
+#header-container:focus {
+  outline: none;
+}
+
+.club-card-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 300px));
+  column-gap: 2.5vw;
+  row-gap: 2.5vh;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
+.club-card img{
+  width: 100%;
+}
+
+.max-width {
+  flex: 1;
+}
+
+.movie-section-title {
+  position: sticky;
+  background-color: #e8e8e8;
+  top: 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h3::before {
+  content: "···";
+  font-weight: bold;
+  color: #9b1700;
+  margin-right: 10px;
+}
+
+.smaller {
+  font-size: 0.65rem;
+}
+
+/* Klaus page **/
+
+#klaus-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+#klaus-row {
+  gap: 30px;
+}
+
+#klaus-row > :first-child {
+  flex: 7 1 300px;
+}
+
+#klaus-row > :nth-child(2) {
+  flex: 10 1 400px;
+}
+
+iframe {
+  width: 100%;
+}
+
+#klaus-container h3 {
+  font-weight: bold;
+  border-bottom: solid 1px black;
+  margin-bottom: 10px;
+}
+
+#klaus-container h3:before {
+  display: none;  /*CAMBIAR ESTO?*/
+}
+
+#klaus-container h3 + div {
+  margin-left: 10px;
+}
+
+#klaus-container section {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+#klaus-container img {
+  float: left;
+  border-radius: 50%;
+  shape-outside: circle(50%);
+  margin-right: 10px;
+}
+
+.local-nav {
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.local-nav a {
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.local-nav a:hover, .local-nav ul > :last-child  {
+  opacity: .5;
+}
+
+.local-nav li + li:before {
+  content: "/";
+  margin: 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #header-container {
+    flex-direction: column;
+  }
+
+  #sign-in-btn-container {
+    order: 1;
+  }
+
+  #header-container nav {
+    order: 3;
+  }
+
+  #logo {
+    order: 2;
+  }
+
+  #header-container nav ul > li {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  #body-footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #secondary-nav li {
+    display: block;
+    text-align: center;
+  }
+
+  address {
+    text-align: center;
+  }
+
+  .m-hidden, .m-hidden * {
+    display: none;
+  }
+
+  .col-on-mobile {
+    flex-direction: column;
+  }
+
+  #movie-sections-nav {
+    position: initial;
+  }
+
+  .local-nav {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #secondary-nav li + li:before {
+    content: "·";
+    font-weight: bold;
+    margin: 0 10px;
+  }
+}
